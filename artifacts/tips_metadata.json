@@ -19,6 +19,36 @@
 			},
 			{
 				"inputs": [],
+				"name": "viewWaitress",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address payable",
+								"name": "walletAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "percent",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct tips.Waitress[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "viewtips",
 				"outputs": [
 					{
@@ -59,11 +89,11 @@
 	},
 	"sources": {
 		"tipjar.sol": {
-			"keccak256": "0x127963f1fb42b8af8e3576761fddf6f13d996adfd8e59efd240cbef66b50c745",
+			"keccak256": "0x081ebe6c6d609d6e0a8413f74cd2e9f258bcea9eff9a9a8ab4b9a00874ba1efa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0edadd70044303c584cc23d84a87143cece491349bf4301301fa346ce2b7dbdf",
-				"dweb:/ipfs/QmU6NntkxsCZ6usMqzxamLgKvwbCbm5qAmttGDdWg74WEA"
+				"bzz-raw://bc685097371a5ca84d29794f57e51d0eef45c94d2f8727eb4f8a2b6e6088f262",
+				"dweb:/ipfs/QmY7rcmFjQUynoiM7m13QAqXAJrehcsgoRk8EpWeEV3aht"
 			]
 		}
 	},

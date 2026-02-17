@@ -78,4 +78,26 @@ contract tips {
             }
         }
     }
+    function distributeBalance() public {
+        require(address(this).balance > 0, "No Money");
+
+        if (waitress.length >= 1) {
+            uint totalamount = address(this).balance;
+
+            for (uint j = 0; j < waitress.length; j++) {
+                // Calculate share
+                uint distributeAmount = (totalamount * waitress[j].percent) /
+                    100;
+
+                // Send money
+                _transferFunds(waitress[j].walletAddress, distributeAmount);
+            }
+        }
+    }
+
+    function _transferFunds(address payable recipient, uint amount) internal {
+        (bool success, ) = payable(recipient).call{value: amount}("");
+
+        require(success, "Transfer failed.");
+    }
 }

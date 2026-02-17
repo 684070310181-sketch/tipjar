@@ -41,6 +41,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "distributeBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -125,11 +132,11 @@
 	},
 	"sources": {
 		"tipjar.sol": {
-			"keccak256": "0x6cb689b1b6968b0d709460a2ffc5d5e8f712ea5b72b0c9c2ed9951e40a03bfbe",
+			"keccak256": "0x61b003dff6965c05492717e5d039e888c7c65ae3473b48dc441778265a6d79f9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://49b10686e1c0c7c436a4d2075899f3b857d2698902e095b5225efc0f95aadf86",
-				"dweb:/ipfs/QmUAsfQjM9wKH4biNV3dA7Af2PfWfiXtDnitomgxq3DZCq"
+				"bzz-raw://0f07ca3401c63e81d3997d1937c00c1bb1396967e905ef74ba728064820951a8",
+				"dweb:/ipfs/QmYjSCmaAQm2aLNoY9EfrmmBb6yJtvbNu87HXaw3fkw5EB"
 			]
 		}
 	},
